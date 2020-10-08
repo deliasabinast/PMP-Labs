@@ -5,3 +5,9 @@ exit
 runMain Test
 runMain Lab5.Ex1
 exit
+sbt "runMain Lab2.Lab2"
+runMain Lab2.Lab2
+package Lab2
+runMain Lab2.Ex1
+runMain Lab2.Lab2
+runMain Lab2.Ex1
