@@ -1,4 +1,4 @@
-package Lab2
+/***package Lab2
 
 import java.util.ArrayList
 import com.cra.figaro.language._
@@ -24,3 +24,4 @@ class Profesor extends Persoana(var nume: String, var prenume: String, var mater
 class Materie(var numeMaterie: Array[String]){
     val numeMaterie = Array("PMP","Mate","Logica","OOP")
 }
+***/
