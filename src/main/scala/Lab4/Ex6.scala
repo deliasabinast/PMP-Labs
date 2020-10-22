@@ -16,7 +16,7 @@ object Ex6 {
             val die6 = FromRange(1, 7)
             (die1 === die2) && (die3 === die4) && (die5 === die6) && (die1 !== die3) && (die3 !== die5) && (die5 !== die1)
         }
-        val jail = doubles && doubles && doubles
+        val jail = doubles
         println(VariableElimination.probability(jail, true))
  	}
 }
