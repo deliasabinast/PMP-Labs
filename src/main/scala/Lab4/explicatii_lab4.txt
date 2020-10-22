@@ -1,0 +1,65 @@
+PPP/ex 2.
+Probabilitatile se schimba mereu in functie de evenimentele pe care le luam in considerare,
+
+
+
+PPP/ex 3.
+a) 
+val x = Flip(0.4)
+val y = Flip(0.4)
+val z = x
+val w = x === z
+println(VariableElimination.probability(w, true))
+
+z va lua mereu valoarea lui x, iar daca w ia si el valoarea lui x, inseamna ca x===z va fi adevarat, deci w va fi adevarat. Asadar, se afiseaza 1.0 in acest caz.
+
+b)
+val x = Flip(0.4)
+val y = Flip(0.4)
+val z = y
+val w = x === z
+println(VariableElimination.probability(w, true))
+
+In acest caz, z va fi mereu y, asadar trebuie sa vedem cazurile in care x=y.
+Destul de intuitiv, pentru ca x si y sa fie egale, fie sunt amandoua true, fie amandoua false.
+
+(1)Probabilitatea ca amandoua sa fie true: 0.4 * 0.4
+(2)Probabilitatea ca amandoua sa fie false: (1 - 0.4)*(1 - 0.4)=0.6*0.6.
+
+Din (1) si (2) rezulta ca probabilitatea ca x si y sa fie egale este (0.4*.0.4) + (0.6*0.6) = 0.16 + 0.36 = 0.52
+
+Asadar, programul afiseaza 0.52
+
+PPP/ex 4.
+
+Interpretarea rezultatului:
+
+Cand rulam programul pentru 2 zaruri, afiseaza 0.0(5) (mai exact, 0.05555555555555555).
+Acest lucru se intampla deoarece avem 2 posibilitati pentru care se afiseaza 11: cand die1 are fata 5 si die2 fata 6 si invers, adica die1 cu fata 6 si die2 cu fata 5.
+
+Probabilitatea pt fiecare din cele doua cazuri este (1/6)*(1/6), deoarece functia FromRange produce 1,2,3,4,5 sau 6 cu probabilitati egale.
+Pentru ca avem doua cazuri de probabilitate (1/6)*(1/6), inseamna ca rezultatul final (probabilitatea ca suma sa fie 11) va fi 2* (1/6) * (1/6)= 2* 0.16666 * 0.16666 = 2 * 0.27777 = 0.0555555. 
+
+(*facut varianta pt 3 dice in cod*)
+
+Numarul maxim de zaruri pt care se poate crea suma 11 este 11, si asta doar in cazul in care fata fiecarui zar va fi 1 (fata care se ia in calcul la suma).
+
+
+PPP/ex 5.
+
+Probabilitatea afisata in conditiile date este 0.4. Explicatia este urmatoarea: 
+
+Mai intai numaram cazurile in care suma a doua zaruri este >8 (deci poate fi 9,10,11,12): 
+
+die1=3, die2=6
+die1=4, die2={5,6}
+die1=5, die2={4,5,6}
+die1=6, die2={3,4,5,6}
+
+In total avem 10 cazuri. Dar din cele 10, doar 4 sunt favorabile (die1=6). => Probabilitatea= 4/10=0.4
+
+PPP/ex 6.
+
+Probabilitatea sa ajungem in jail (sa dam 3 duble consecutive) este de 0.04.
+
+(*facut varianta pt duble diferite in cod*) 

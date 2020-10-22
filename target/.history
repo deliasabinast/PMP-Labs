@@ -33,3 +33,8 @@ runMain Lab3.Burglary
 runMain Lab3.CovidProb
 runMain Lab3.Burglary
 runMain Lab3.HelloWorldTest
+runMain "Lab4.HelloWorld"
+runMain Lab4.HelloWorld
+runMain Lab4.Ex4
+runMain Lab4.Ex5
+runMain Lab4.Ex6
