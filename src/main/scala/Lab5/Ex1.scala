@@ -1,4 +1,4 @@
-package Lab5
+/*package Lab5
 
 import com.cra.figaro.library.atomic.discrete
 import com.cra.figaro.language.Chain
@@ -70,3 +70,4 @@ alg4.stop()
 println("Expected gain for passing:" + alg4.mean(player1Gain))
 }
 }
+*/
