@@ -1,4 +1,4 @@
-package Lab8
+/***package Lab8
 
 import com.cra.figaro.language._
 import com.cra.figaro.algorithm.sampling._
@@ -37,4 +37,4 @@ case class Production(resdev: ResearchnDev) extends Departments{
 case class Sales(production: Production) extends Departments{
     val state = Apply(production.state, (production: Double) => if (production < 0.7) 0.2 else 0.8)
 
-}
+}***/

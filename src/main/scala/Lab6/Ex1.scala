@@ -1,4 +1,4 @@
-package Lab6
+/***package Lab6
 
 import com.cra.figaro.language._
 import com.cra.figaro.algorithm.sampling._
@@ -66,4 +66,5 @@ object Ex1 {
  }
 
 }
+***/
  

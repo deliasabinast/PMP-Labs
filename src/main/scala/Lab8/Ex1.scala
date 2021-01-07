@@ -1,4 +1,4 @@
-package Lab8
+/***package Lab8
 
 import com.cra.figaro.language._
 import com.cra.figaro.algorithm.sampling._
@@ -29,3 +29,4 @@ object Alarma{
 	
   }
 }
+***/
