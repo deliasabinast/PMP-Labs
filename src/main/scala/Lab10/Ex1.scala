@@ -1,4 +1,4 @@
-/***package Lab10
+package Lab10
 
 import com.cra.figaro.language._
 import com.cra.figaro.algorithm.sampling._
@@ -23,4 +23,4 @@ object Ex1 {
  			scoreDifferential(minute) = If(goal(minute), Apply(ourPossession(minute), scoreDifferential(minute - 1), (poss: Boolean, diff: Int) => if (poss) (diff + 1).min(5) else (diff - 1).max(-5)), scoreDifferential(minute - 1))
 }
 	}
-}***/
+}

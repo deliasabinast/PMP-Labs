@@ -1,4 +1,4 @@
-/***package Lab9
+package Lab9
 
 import com.cra.figaro.language._
 import com.cra.figaro.algorithm.sampling._
@@ -43,4 +43,3 @@ object Marrrrkov{
 		}
 	}
 }
-***/
