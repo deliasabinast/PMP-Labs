@@ -36,7 +36,7 @@ object Ex1{
     snowyDaysInAWeek.setCondition((i: Int) => i<=5 && i>2) //conditia ca sapt sa fie normala
     println(VariableElimination.probability(week, "normala")) //probabilitatea ca sapt sa fie normala
 
-
+    //C:
 
   }
 }
