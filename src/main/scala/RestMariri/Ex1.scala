@@ -33,7 +33,8 @@ object Ex1{
       else "normala" //altfel.. 
   }
     //B:
-    println(VariableElimination.probability())
+    snowyDaysInAWeek.setCondition((i: Int) => i<=5)
+    println(VariableElimination.probability(week, "normala"))
 
 
 
