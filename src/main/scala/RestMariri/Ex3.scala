@@ -13,7 +13,7 @@ import com.cra.figaro.algorithm.factored._
 object RestMariri {
   def main(args: Array[String])
   {
-   
+    Universe.createNew() 
     //A:
     // clasa abstracta pt modelul Markov
     abstract class State {
@@ -40,9 +40,14 @@ object RestMariri {
 
     //D:
     //lista cu 10 stari
+    initial_state = new InitialState()   //prima stare
+      for {universe <- 1 until 9}  //urmatoarele 9 stari
+      {
+        starePacient(universe) = new NextState(starePacient, universe)
+      }
 
     //F:
-    starePacient(9).observe('nuPreaBuna)
+    starePacient(9).observe('nuPreaBuna) //ultima stare este starea a 9-a, de aceea ne intereseaza starePacient(9), in contextul in care s-a observat anterior starea "nu prea buna"
     println(VariableElimination.probability(starePacient(10), 'nuPreaBuna))
 
   }
