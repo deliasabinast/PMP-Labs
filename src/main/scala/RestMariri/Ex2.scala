@@ -23,12 +23,12 @@ import com.cra.figaro.library.atomic.continuous.Normal
 import com.cra.figaro.algorithm.sampling.Importance
 
 
-object RestMariri {
+object Ex2 {
   def main(args: Array[String]): 
   Unit = {
       //A:
     val avg_temperature = Normal(7, 5)    //distributie normala cu media 7 si variatia 5, reprezentata cu ajutorul metodei Normal
-    val variance = Flip(0.5) //probabilitea de 0.5 pt fiecare dintre cele 2 valori ale variantei (adica 20 si 30)
+    val variance = Flip(0.5) //probabilitea de 0.5 pt fiecare dintre cele 2 valori ale variatiei (adica 20 si 30)
     variance1 = If(variance, 20, 30) //in functie de valoarea lui variance, se alege o valoare pt variance1 (dintre 20 si 30)
     val avg_temp = Normal(7, variance1)   //se modeleaza temperatura in functie de distributia normala cu varianta egala cu variance1, pt media 7
 

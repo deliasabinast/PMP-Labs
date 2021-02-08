@@ -10,7 +10,7 @@ import com.cra.figaro.library.compound._
 import com.cra.figaro.library.atomic.discrete._
 import com.cra.figaro.algorithm.factored._
 
-object RestMariri {
+object Ex3 {
   def main(args: Array[String])
   {
     Universe.createNew() 
